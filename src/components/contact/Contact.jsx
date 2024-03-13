@@ -17,10 +17,11 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert('Email sent successfuly');
+          e.target.reset()
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert('Email failed...', error.text);
         },
       );
   };
